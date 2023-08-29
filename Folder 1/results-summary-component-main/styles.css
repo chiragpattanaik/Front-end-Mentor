@@ -1,0 +1,152 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --bg-light-slate-blue: hsl(252, 100%, 67%);
+  --bg-light-royal-blue: hsl(241, 81%, 54%);
+  --bg-violet-blue: hsla(256, 72%, 46%, 1);
+  --bg-persian-blue: hsla(241, 72%, 46%, 0);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.child-container 
+{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color:  hsla(0, 0%, 100%, 0.943);
+  box-shadow: 15px 15px 10px  hsl(221, 100%, 96%);
+}
+
+.score--grey {
+  color: gray;
+}
+
+.clr-darkblue {
+  font-weight: bold;
+  color: black;
+}
+
+.score-card 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  font-family: 'Hanken Grotesk';
+}
+
+.sub-card 
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Hanken Grotesk';
+}
+
+.sub-card img {
+  margin-right: 5px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+
+.final-res
+{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.circle-container
+{
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  
+}
+
+
+.left-container
+{
+
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 35px 25px 35px 25px;
+}
+
+.card img {
+  vertical-align: middle;
+}
+
+.reaction-card {
+  color: var(--light-red);
+  background: hsla(0, 100%, 67%, 0.06);
+}
+
+.memory-card {
+  color: var(--orange-yellow);
+  background: hsla(39, 100%, 56%, 0.06);
+}
+
+.verbal-card {
+  color: var(--green-teal);
+  background: hsla(166, 100%, 37%, 0.06);
+}
+
+.visual-card {
+  color: var(--cobalt-blue);
+  background: hsla(234, 85%, 45%, 0.06);
+}
+
+.lighter-text 
+{
+  font-family: 'Hanken Grotesk';
+  color: hsla(0, 33%, 95%, 0.726);
+}
+
+.white-text
+{
+  color: aliceblue;
+}
+
+
+@media (max-width: 375px) {
+  .child-container 
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
