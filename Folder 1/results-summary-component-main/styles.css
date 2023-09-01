@@ -14,28 +14,19 @@
 
 .child-container 
 {
-  width: 30%;
+  width: 50%;
+  max-width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
   display:flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: row;
-  background-color:  hsla(0, 0%, 100%, 0.943);
+  background-color: hsla(0, 0%, 100%, 0.943);
   box-shadow: 15px 15px 10px  hsl(221, 100%, 96%);
 }
 
-.score--grey {
-  color: gray;
-}
-
-.clr-darkblue {
-  font-weight: bold;
-  color: black;
-}
 
 .score-card 
 {
@@ -46,13 +37,6 @@
   font-family: 'Hanken Grotesk';
 }
 
-.sub-card 
-{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: 'Hanken Grotesk';
-}
 
 .sub-card img {
   margin-right: 5px;
@@ -82,11 +66,12 @@
 {
   background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 8em;
   height: 8em;
+  margin-bottom: 20px;
   
 }
 
@@ -95,14 +80,12 @@
 {
 
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   text-align: center;
   width: 50%;
   height: 100%;
   border-radius: 20px;
-  padding: 35px 25px 35px 25px;
+  margin-right: 50px;
+  padding: 100px 25px 35px 25px;
 }
 
 .card img {
@@ -117,6 +100,16 @@
 .memory-card {
   color: var(--orange-yellow);
   background: hsla(39, 100%, 56%, 0.06);
+}
+
+.score--grey {
+  color: gray;
+}
+
+.clr-darkblue
+ {
+  font-weight: bold;
+  color: black;
 }
 
 .verbal-card {
@@ -140,13 +133,40 @@
   color: aliceblue;
 }
 
+.heading-of-result
+{
+  font-family: 'Hanken Grotesk';
+}
+  
 
-@media (max-width: 375px) {
+
+@media (max-width: 768px) and (min-width: 200px)
+{
   .child-container 
   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; 
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
     display: flex;
+    flex-direction: column; 
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.943);
+    box-shadow: 15px 15px 10px hsl(221, 100%, 96%);
   }
+  
+  .left-container 
+  {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+    width: 100%; 
+    text-align: center;
+    border-radius: 60px;
+    margin: 0px 50px 0px 50px;
+    padding: 100px 25px 20px 10px;
+  
+}
+
 }
