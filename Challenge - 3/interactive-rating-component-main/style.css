@@ -1,0 +1,136 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+}
+
+
+.main-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-container {
+    margin-left: 40px;
+    margin-top: 7rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.heading-container p {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+    font-size: 17px;
+    width: 95%;
+
+}
+
+.rating-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rate-btn {
+    all: unset;
+    background-color: hsl(219, 14%, 25%);
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+#submit-btn {
+    all: unset;
+}
+
+
+.submit-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    margin: 30px;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.submit-container h3
+{
+    color: white;
+    font-size: 25px;
+}
+
+.submit-container p
+{
+    color:  hsl(217, 12%, 63%);
+}
+
+
+#rating-selected 
+{
+    text-align: center;
+    font-size: 17px;
+    background-color: hsl(213, 15%, 26%);
+    border-radius:30px;
+    padding: 0.3rem 0.5rem;
+    width: 200px;
+    color: hsl(25, 97%, 53%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-top: 20px;
+    display: none;
+}
+.btn-cont {
+    display: flex;
+    margin-top: 30px;
+    padding: 10px 80px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating-button button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-cont:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.rate-btn.selectedRating{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+
+}
