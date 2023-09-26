@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-cont {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.img-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.img-cont img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 30px;
+}
+
+.desc h3 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+
+.desc p {
+    color: hsl(0, 4%, 63%);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.tot-eth
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.tot-eth img
+{
+    height: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.tot-eth p
+{
+    color:  hsl(0, 0%, 100%);
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(178, 100%, 50%);
+}
+
+
+.clk-cont
+{
+    margin-left: 50px;
+}
+
+.tot-eth #para
+{
+    color: rgb(228, 228, 228);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.creator
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.creator img
+{
+    height: 30px;
+    margin-left: 20px;
+}
+
+.creator .abt
+{
+    margin-left: 20px;
+}
+
+.name {
+    display: inline;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    margin-right: 25px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.abt {
+    background-color: transparent;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+hr {
+    color: hsl(118, 77%, 58%);
+    width: 260px;
+}

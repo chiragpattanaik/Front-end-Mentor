@@ -12,6 +12,7 @@ SelectRating = () => {
             selectedindex = index;
 
             // You can use a global variable to store the selected index here
+            console.log("SelectedIndex =>", selectedindex)
             window.selectedRating = selectedindex + 1;
         });
     });
@@ -44,7 +45,7 @@ submitfn = () => {
 
         // Get the selected rating from the global variable
         const selectedRating = window.selectedRating;
-        console.log(selectedRating);
+        console.log("Selected rating =>", selectedRating);
 
         if (selectedRating > 0) {
             const DisplayRating = document.getElementById("rating-selected");

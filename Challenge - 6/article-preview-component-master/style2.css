@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--manrope);
+}
+
+:root {
+    /* Font-Family */
+    --manrope: 'Manrope', sans-serif;
+    /* Colors */
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturateddarkblue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightgrayishblue);
+}
+
+section {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgrayishblue);
+}
+
+section .container {
+    height: 280px;
+    width: 730px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.container::before {
+    content: ' ';
+    height: 100%;
+    width: 300px;
+    background: url('../images/drawers.jpg');
+    background-position: left;
+    background-size: 360px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    /* align-items: center; */
+    width: 350px;
+    margin-right: 40px;
+}
+
+.content .main-txt {
+    font-size: 20px;
+    color: var(--veryDarkGrayishBlue);
+    font-weight: 700;
+}
+
+.content .write-up {
+    font-size: 13px;
+    color: var(--desaturateddarkblue);
+}
+
+.content .profile {
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile .profile-pic {
+    width: 40px;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    max-width: 100%;
+}
+
+.profile .fam {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.fam h4 {
+    color: var(--veryDarkGrayishBlue);
+}
+
+.fam .date {
+    color: var(--desaturateddarkblue);
+}
+
+.profile .share-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--lightgrayishblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(140px);
+    cursor: pointer;
+    transition: all ease-in-out 0.35s;
+}
+
+.profile .share-icon.active {
+    background-color: var(--desaturateddarkblue);
+}
+
+.share-icon #letssee {
+    fill: #6e8098;
+    transition: all ease-in-out 0.35s;
+}
+
+.share-icon.active #letssee {
+    fill: #fff;
+}
+
+.share-icon .tooltip {
+    position: absolute;
+    background-color: var(--veryDarkGrayishBlue);
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    bottom: 50px;
+    transform: scale(0);
+    transition: all ease-in-out 0.35s;
+}
+
+.share-icon.active .tooltip {
+    transform: scale(1);
+}
+
+.share-icon .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--veryDarkGrayishBlue) transparent transparent transparent;
+}
+
+.tooltip .child p {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    color: var(--grayishBlue);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 780px) {
+    section .container {
+        height: 550px;
+        width: 320px;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container::before {
+        content: '  ';
+        height: 280px;
+        width: 320px;
+        background: url('../images/drawers.jpg') no-repeat;
+        background-position: top;
+        background-size: cover;
+
+        border-radius: 10px;
+        margin-top: -px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .container .content {
+        height: 350px;
+        width: 80%;
+        margin-right: 0px;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    .content>* {
+        margin-top: 30px;
+    }
+
+    .content .main-txt {
+        font-size: 16px;
+    }
+
+    .content .profile {
+        display: flex;
+        flex-direction: row;
+        /* overflow: hidden; */
+        height: 70px;
+        width: 288px;
+        transition: all ease-in-out 0.7;
+    }
+
+    .content .profile.active {
+        background-color: var(--veryDarkGrayishBlue);
+    }
+
+    .profile .share-icon {
+        width: 30px;
+        height: 30px;
+        background-color: var(--lightgrayishblue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transform: translateX(50px);
+        cursor: pointer;
+        transition: all ease-in-out 0.35s;
+    }
+
+    .profile .share-icon.active {
+        background-color: var(--desaturateddarkblue);
+    }
+
+    .share-icon #letssee {
+        fill: #6e8098;
+        transition: all ease-in-out 0.35s;
+    }
+
+    .share-icon.active #letssee {
+        fill: #fff;
+    }
+
+    .share-icon .tooltip {
+        position: absolute;
+        background-color: var(--veryDarkGrayishBlue);
+        width: 230px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border-radius: 0px;
+        bottom: 0px;
+        top: -20px;
+        right: 56px;
+        transform: scale(0);
+        transition: all ease-in-out 0.35s;
+        height: 70px;
+    }
+
+    .share-icon.active .tooltip {
+        transform: scale() translateX(0px);
+    }
+
+    .share-icon .tooltip::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin-left: 0px;
+        border-width: 0px;
+
+        border-color: var(--veryDarkGrayishBlue) transparent transparent transparent;
+    }
+}
