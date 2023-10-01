@@ -75,14 +75,14 @@ body {
 }
 
 
-.share {
+#share {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.profile .share {
+.profile #share {
     background-color: hsl(210, 46%, 95%);
     height: 30px;
     width: 30px;
@@ -91,20 +91,71 @@ body {
     margin-right: auto;
 }
 
-@media screen and (max-width: 375px) {
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+
+
+.tooltiptext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tooltiptext #shtext {
+    font-family: 'Manrope', sans-serif;
+    color: hsl(240, 3%, 80%);
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
     .main-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: auto;
-        height: 500px; */
         width: 80%;
         height: auto;
         flex-direction: column;
     }
 
     .content img {
-        max-width: 100%;
+        /* max-width: 100%;
+        height: auto; */
+        width: 100%;
         height: auto;
     }
 
@@ -136,6 +187,7 @@ body {
         border-radius: 30px;
         margin-left: 2px;
     }
+
 
 
 }
