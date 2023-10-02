@@ -1,0 +1,198 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+* {
+    font: inherit;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.car-types {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.sedan-cars {
+    height: auto;
+    max-width: 60vh;
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sedan-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.sedan-cars h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedan-cars p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan-desc h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 50px;
+    color: hsl(31, 77%, 52%);
+    border: 2px solid white;
+}
+
+.sedan-desc:hover h3 {
+    visibility: visible;
+    background-color: transparent;
+    color: white;
+}
+
+.suvs {
+    height: auto;
+    width: 300px;
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suv-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.suv-desc h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.suv-desc p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv-desc h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 50px;
+    color: hsl(179, 90%, 28%);
+    border: 2px solid white;
+}
+
+.suv-desc:hover h3 {
+    visibility: visible;
+    background-color: transparent;
+    color: white;
+}
+
+
+.luxury {
+
+    width: 300px;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.luxury-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.luxury-desc h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-desc p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 83%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.luxury-desc h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 50px;
+    color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+}
+
+.luxury-desc:hover h3 {
+    visibility: visible;
+    background-color: transparent;
+    color: white;
+}
+
+.sedan-desc img,
+.suv-desc img,
+.luxury-desc img {
+    height: 60px;
+    width: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-types {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
