@@ -1,0 +1,120 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    font: inherit;
+}
+
+.main-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 850px;
+    transform: translate(-50%, -50%);
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car-types {
+    display: flex;
+}
+
+
+.sedan-cars {
+    height: 500px;
+    width: 300px;
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sedan-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.sedan-cars h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedan-cars p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.suvs {
+    height: 500px;
+    width: 300px;
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suv-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.suv-desc h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.suv-desc p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury {
+    height: 500px;
+    width: 300px;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.luxury-desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.luxury-desc h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-desc p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 83%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
