@@ -30,7 +30,7 @@ body {
 
 .sedan-cars {
     height: auto;
-    max-width: 60vh;
+    width: 300px;
     background-color: hsl(31, 77%, 52%);
     display: flex;
     flex-direction: column;
